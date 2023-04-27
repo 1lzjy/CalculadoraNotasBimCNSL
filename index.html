@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de notas (padrão CNSL)</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <h1 class="page-title">
+    Calculadora de notas Bimestral
+  </h1>
+  <p class="page-subtitle">
+    Calcule sua média bimestral e veja seu status de Aprovação do bimestre.
+
+  <p> Instruções: Insira suas notas abaixo nos respectivos campos, utilize apenas números e o "." como vírgula caso seja um valor com décimos, caso nao temha algum valor, apenas deixe o campo respectivo em branco</p>
+  <p class="insira"> Insira suas notas abaixo</p>
+  <label for="notaAD"> Nota Ad</label><br>
+  <input type="number" id="NotaAD" size="2" /><br>
+  <label for="notaS"> Nota Simulado</label><br>
+  <input type="number" id="NotaS" size="2" /><br>
+  <label for="notaAB"> Nota Ab</label><br>
+  <input type="number" id="NotaAB" size="2" /><br>
+  <label for="notaF"> Nota Formativio</label><br>
+  <input type="number" id="NotaF" size="2" /><br>
+  <button type="submit" onclick="Calcular()">CALCULAR</button>
+
+  <h2 id="MediaB"></h2>
+  <h2 id="Status"></h2>
+  <h2 id="faltando"></h2>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
